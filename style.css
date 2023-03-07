@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --border: rgb(17, 14, 17);
+    --bg: rgb(195, 201, 202);
+    --primary: rgb(177, 174, 174);
+    --secondary: rgb(112, 109, 109);
+    --text: rgb(34, 24, 24);
+    --textSoft: rgb(12, 7, 7);
+    --gap: 5rem;
+}
+
+body,
+html {
+    background-color: var(--bg);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.head {
+    border-bottom: 1px solid var(--border);
+    height: 5rem;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 0.3rem;
+}
+
+.head h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+    width: fit-content;
+    color: var(--text);
+}
+
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+h5 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    color: var(--textSoft);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+h5 span {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(87, 86, 86);
+}
+
+.data {
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.row {
+    border: 1px solid var(--border);
+    display: flex;
+    height: 3rem;
+    border-bottom: none;
+    background-color: var(--primary);
+}
+
+.row:last-child {
+    border-bottom: 1px solid var(--border);
+}
+
+.row_head {
+    background-color: var(--secondary);
+}
+
+.data_blocks {
+    border-left: 1px solid var(--border);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.data_blocks_bg1 {
+    background-color: rgb(148, 147, 147);
+}
+
+
+.center {
+    justify-content: center;
+}
+
+.data_blocks:first-child {
+    border-left: none;
+}
+
+.data_head_txt {
+    font-size: 1.35rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.data_text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--textSoft);
+}
+
+.ranks {
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    gap: var(--gap);
+    /* flex-direction: column; */
+}
+
+.rank_count {
+    flex: 0.25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.rank_count span {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.ranks_container {
+    flex: 1;
+}
+
+.bottom {
+    margin: 4rem 0;
+    height: auto;
+    display: flex;
+    gap: var(--gap);
+}
+
+.bottom .left,
+.right {
+    flex: 1;
+}
+
+select {
+    width: 400px;
+    border:1px solid var(--border);
+    font-size: 1.4rem;
+    outline: none;
+}
+select option{
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    color: var(--textSoft);
+}
+.find_rank{
+    width: 100%;
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.find_rank .border_left{
+    border-left: 1px solid var(--border);
+}
+.find_rank .data_body .row_{
+    display: flex;
+    border-bottom:1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    height: 3rem;
+}
+.find_rank .data_body .row_:first-child{
+    border-top: 1px solid var(--border);
+}
+
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .head h1 {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3,
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    h5 {
+        font-size: 1.15rem;
+    }
+
+    h5 span {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .data {
+        width: 90%;
+    }
+
+    .data_blocks {
+        padding: 0.2rem 1rem;
+        min-width: 100px;
+    }
+
+    .row_head,
+    .row {
+        height: auto;
+    }
+
+    .data_head_txt {
+        font-size: 1.2rem;
+
+    }
+
+    .ranks {
+        flex-direction: column;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+
+    .ranks .left,
+    .right {
+        width: 100%;
+    }
+}

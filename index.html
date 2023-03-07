@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Skill and Capability</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="head">
+            <h1>Assignment 2 - Javascript Coding</h1>
+        </div>
+
+        <!-- table with given data -->
+        <h2>Question : Skills and Capabilities of cat</h2>
+        <div class="data">
+            <div class="row row_head">
+                <div class="data_blocks"><span class="data_head_txt">Skills/Capabilities</span></div>
+                <div class="data_blocks center"><span class="data_head_txt">2019 Scores</span></div>
+                <div class="data_blocks center"><span class="data_head_txt">2024 Scores</span></div>
+            </div>
+
+            <div class="data_body" id="data_body">
+                <!-- data to be fetched from json file -->
+            </div>
+
+        </div>
+
+        <!-- answers of the questions -->
+
+        <h2>Solutions :</h2>
+
+        <!-- ranked data -->
+        <div class="ranks">
+            <!-- data ranked according to data today(2019) -->
+            <div class="ranks_container">
+                <h3>Ranks according to today (2019 score) :</h3>
+                <div class="row  row_head">
+                    <div class="rank_count"><span class="data_head_txt">Rank</span></div>
+                    <div class="data_blocks"><span class="data_head_txt">Skills/Capabilities</span></div>
+                    <div class="data_blocks center"><span class="data_head_txt">2019 Scores</span></div>
+                </div>
+                <div class="data_body" id="rankFirst">
+                    <!-- sort rank according 2019 -->
+                </div>
+            </div>
+
+            <!-- data ranked according to data today(2019) -->
+            <div class="ranks_container">
+                <h3>Ranks according to future (2024 score) :</h3>
+                <div class="row row_head">
+                    <div class="rank_count"><span class="data_head_txt">Rank</span></div>
+                    <div class="data_blocks"><span class="data_head_txt">Skills/Capabilities</span></div>
+                    <div class="data_blocks center"><span class="data_head_txt">2024 Scores</span></div>
+                </div>
+                <div class="data_body" id="rankSecond">
+                    <!-- sort rank according 2024 -->
+                </div>
+            </div>
+        </div>
+
+        <h5><span>Note :</span> Top 3 and Bottom 3 capabilities are highlighted for both 2019 and 2024</h5>
+
+
+        <div class="bottom">
+
+            <div class="left">
+                <h4>Top 3 Cababilities (Combining both 2019 and 2024 scores) :</h4>
+                <div class="row row_head">
+                    <div class="rank_count"><span class="data_head_txt">S. no.</span></div>
+                    <div class="data_blocks"><span class="data_head_txt">Skills/Capabilities</span></div>
+                    <div class="data_blocks center"><span class="data_head_txt">Combined Score (%)</span></div>
+                </div>
+                <div class="data_body" id="topCapibility">
+                    <!-- top 3 accelerating capabilities -->
+                </div>
+            </div>
+
+            <div class="right">
+                <h4>Bottom 3 Cababilities (Combining both 2019 and 2024 scores) :</h4>
+                <div class="row row_head">
+                    <div class="rank_count"><span class="data_head_txt">S. no.</span></div>
+                    <div class="data_blocks"><span class="data_head_txt">Skills/Capabilities</span></div>
+                    <div class="data_blocks center"><span class="data_head_txt">Combined Score (%)</span></div>
+                </div>
+                <div class="data_body" id="bottomCapibility">
+                    <!-- top 3 decelerating capabilities -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom">
+
+            <div class="left">
+                <h4>Top 3 Accelerating Cababilities (Fastest growing) :</h4>
+                <div class="row row_head">
+                    <div class="rank_count"><span class="data_head_txt">S. no.</span></div>
+                    <div class="data_blocks"><span class="data_head_txt">Skills/Capabilities</span></div>
+                    <div class="data_blocks center"><span class="data_head_txt">Score difference (%)</span></div>
+                </div>
+                <div class="data_body" id="topThree">
+                    <!-- top 3 accelerating capabilities -->
+                </div>
+            </div>
+
+            <div class="right">
+                <h4>Top 3 Decelerating Cababilities (Fastest declining) :</h4>
+                <div class="row row_head">
+                    <div class="rank_count"><span class="data_head_txt">S. no.</span></div>
+                    <div class="data_blocks"><span class="data_head_txt">Skills/Capabilities</span></div>
+                    <div class="data_blocks center"><span class="data_head_txt">Score difference (%)</span></div>
+                </div>
+                <div class="data_body" id="bottomThree">
+                    <!-- top 3 decelerating capabilities -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom">
+            <h4>Know the rank of the skill :</h4>
+            <select name="skill" id="select">
+                <option value="" selected>Select to know the rank of the skill</option>
+                <!-- option maybe there -->
+            </select>
+
+        </div>
+
+        <!--showing data according user input  -->
+        <div class="find_rank">
+            <div class="rank_">
+                <!-- data adding through .js -->
+            </div>
+            <div class="data_body" id="rankBody">
+                <!-- data adding through .js -->
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

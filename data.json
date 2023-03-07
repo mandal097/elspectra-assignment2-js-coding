@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "skills": "Agility-And-Coordination",
+    "today": "64",
+    "future": "71"
+  },
+  {
+    "id": 2,
+    "skills": "Hunting-and-Predatory-skills",
+    "today": "76",
+    "future": "70"
+  },
+  {
+    "id": 3,
+    "skills": "Communication",
+    "today": "60",
+    "future": "75"
+  },
+  {
+    "id": 4,
+    "skills": "Adaptility",
+    "today": "82",
+    "future": "63"
+  },
+  {
+    "id": 5,
+    "skills": "Independence",
+    "today": "67",
+    "future": "78"
+  },
+  {
+    "id": 6,
+    "skills": "Affection-and-Socialization",
+    "today": "70",
+    "future": "84"
+  },
+  {
+    "id": 7,
+    "skills": "Climbing",
+    "today": "90",
+    "future": "95"
+  },
+  {
+    "id": 8,
+    "skills": "Balance",
+    "today": "88",
+    "future": "96"
+  },
+  {
+    "id": 9,
+    "skills": "Senses",
+    "today": "86",
+    "future": "90"
+  },
+  {
+    "id": 10,
+    "skills": "Flexibility",
+    "today": "75",
+    "future": "83"
+  },
+  {
+    "id": 11,
+    "skills": "Problem-solving",
+    "today": "67",
+    "future": "78"
+  },
+  {
+    "id": 12,
+    "skills": "Stealth",
+    "today": "59",
+    "future": "72"
+  }
+]
